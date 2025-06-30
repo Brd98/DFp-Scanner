@@ -4,4 +4,4 @@ A little project I want to work on - a tool that scans and identifies your inter
 ---
 
 ### *IMPORTANT*
-Tool is currently in development.
+Tool is currently in development AND I have no idea how to create CLI tools using python.
