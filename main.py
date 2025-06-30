@@ -1,18 +1,9 @@
-import cmd
+import click
 
-class MyNewCLI(cmd.Cmd):
-    prompt = "hello!"
-    intro = "Welcome to the DFp tool!"
-    
-    def do_hello(self, line):
-        """Print a greeting."""
-        print("Hello, World!")
+@click.group()
+def cli():
+    pass
 
-    def do_quit(self, line):
-        """Exit the CLI."""
-        return True
-# e
-
-
-if __name__ == '__main__':
-    MyNewCLI().cmdloop()
+@cli.command()
+def hello():
+    click.echo("Hello, World!")
